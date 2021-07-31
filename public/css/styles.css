@@ -86,6 +86,7 @@ div.burger-menu i{
 
 article div.main-article{
     width: 100%;
+    position: relative;
 }
 
 .price{
@@ -123,6 +124,19 @@ main section article i,
 .discount{
     color: #39b54a;
 }
+main section article i{
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
 
 footer{
     text-align: center;
@@ -142,22 +156,6 @@ footer .copyright{
     color: #666;;
     text-align: left;
 }
-/*.credit_card i{
-    color: #1259c3;
-    background-color: white;
-    width: 2em;
-    height: 2em;
-}
-.gift i{
-    color: #1259c3;
-    background-color: white;
-}
-.securityIcon i{
-    width: 40px;
-    height: 40px;
-    color: #1259c3;
-    background-color: white;
-}*/
 article {
     margin: 10px;
 }
@@ -185,10 +183,32 @@ article div {
     div.burger-menu{
         display: none;
     }
-    main section div.products{
-        display: flex;        
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .main-navbar a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+        font-size: 12px;
+    }
+   div.products{
+        display: flex;
+        flex-wrap: wrap;     
+    }
+    article{
+        width: 40%;
     }
 }
 @media (min-width: 769px){
-
+    article{
+        width: 20%;
+    }
 }
