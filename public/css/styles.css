@@ -18,6 +18,9 @@ p{
 div.top-header{
     padding: 5%;
 }
+div.top-header p{
+    font-size: 18px;
+}
 
 header{
     background-color: #EAC926;
@@ -166,6 +169,36 @@ article div {
 .mainarticle .description{
     margin-bottom: 15px;
 }
+.create-form{
+    padding: 20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 90%;
+    padding: 8px;
+}
+.general-button{
+    background-color: #1259c3;
+    color: white;
+    width: 20%;
+    padding: 8px;
+    border-radius: 5px;
+}
+.login-button{
+    width: 100%;
+    background-color: #1259c3; 
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: auto;
+}
 
 @media (max-width: 360px){
     article .description{
@@ -198,6 +231,14 @@ article div {
         display: inline-block;
         padding: 5px;
         font-size: 12px;
+    }
+    .main-navbar ul .navbar-1{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .main-navbar ul .navbar-2{
+        display: flex;
+        justify-content: flex-end;
     }
    div.products{
         display: flex;
