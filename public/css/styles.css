@@ -91,6 +91,9 @@ article div.main-article{
     width: 100%;
     position: relative;
 }
+article.description{
+    display: none;
+}
 
 .price{
     font-size: 18px;
@@ -112,7 +115,7 @@ section.banner img{
 }
 
 main{
-    width: 90vw;
+    width: 90%;
 }
 
 main section article{
@@ -131,14 +134,15 @@ main section article i{
     display: block;
 font-size: 16px;
 padding: 5px;
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 border: 1px solid #39b54a;
 background-color: #FFF;
 border-radius: 50%;
 position: absolute;
 right: 20px;
 top: -15px;
+transition: 850ms;
 }
 
 footer{
@@ -242,14 +246,49 @@ article div {
     }
    div.products{
         display: flex;
-        flex-wrap: wrap;     
+        flex-wrap: wrap; 
+        justify-content: space-between;
     }
     article{
         width: 40%;
+    }
+    footer p.foot-options{
+        font-size: 13px;
     }
 }
 @media (min-width: 769px){
     article{
         width: 20%;
+    }
+    article h4.description{
+        color: white;
+        margin-right: 15px;
+        transition: 400ms;
+    }
+    article:hover .description{
+            color: #666;    
+    }
+    article:hover i{
+        transform: rotate(-90deg);
+    }
+    footer section{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    footer .credit_card:hover i{
+        color: cornflowerblue;
+    }
+    footer .gift:hover i{
+        color: cornflowerblue;
+    }
+    footer .securityIcon:hover i{
+        color: cornflowerblue;
+    }
+    footer .copyright{
+        margin-top: 20px;
+    }
+    .login-button:hover{
+        background-color: #0022AA;
     }
 }
